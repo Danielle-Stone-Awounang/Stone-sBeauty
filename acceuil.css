@@ -5,3 +5,47 @@
    box-sizing: border-box;
    font-family: 'Fuzzy Bubbles', cursive;
 }
+
+/* ma barre de navigation */
+.navbar{
+   height: 60px;
+   width: 100%;
+   background-color: rgba(233, 200, 220, 0.896);
+   color: rgb(49, 26, 26);
+   justify-content: space-between;
+   display: flex;
+   padding: 10px 2px;
+   flex-direction: row;
+   position: fixed;
+}
+.navlogo, .headlogo{
+   border-bottom: 1px solid rgb(36, 34, 34);
+   border-bottom-style: groove ;
+   font-family: 'Inspiration', cursive;
+}
+.navlogo{
+   margin:10px;
+   font-size: 25px;
+   margin-top: -8px;
+}
+.navlogo span{
+   font-size:32px ;
+   font-weight: bold;
+   color:rgb(253, 2, 170);
+   font-family: 'Inspiration', cursive;
+}
+.navbar-item {
+   padding: 5px;
+}
+.navbar-item a{
+   color: rgb(253, 2, 170);;
+   text-decoration: none;
+   padding: 0 10px;
+}
+.navbar-item a:hover{
+   color: rgb(26, 25, 25);
+   color: #fff;
+   border-radius: 1rem;
+}
+
+/* le header maintenent */
