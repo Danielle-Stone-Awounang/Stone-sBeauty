@@ -6,20 +6,25 @@
    font-family: 'Fuzzy Bubbles', cursive;
 }
 
+hr{
+   border: 3px solid black;
+}
+
 /* ma barre de navigation */
 .navbar{
    height: 60px;
    width: 100%;
-   background-color: rgba(233, 200, 220, 0.896);
+   background-color: rgba(255, 255, 255, 0.908);
    color: rgb(49, 26, 26);
    justify-content: space-between;
    display: flex;
    padding: 10px 2px;
    flex-direction: row;
    position: fixed;
+   margin: 0;
 }
 .navlogo, .headlogo{
-   border-bottom: 1px solid rgb(36, 34, 34);
+   border-bottom: 2px solid rgb(253, 2, 170);
    border-bottom-style: groove ;
    font-family: 'Inspiration', cursive;
 }
@@ -38,14 +43,286 @@
    padding: 5px;
 }
 .navbar-item a{
-   color: rgb(253, 2, 170);;
+   color: black;
    text-decoration: none;
    padding: 0 10px;
+   margin: 0;
 }
 .navbar-item a:hover{
-   color: rgb(26, 25, 25);
-   color: #fff;
-   border-radius: 1rem;
+   color: rgb(253, 2, 170);
+   border-bottom: 3px solid rgb(253, 2, 170);
+   padding-bottom: 22px;
+   transition: 0.5s;
 }
 
 /* le header maintenent */
+header{
+   width: 100%;
+   height:85vh; 
+   background-image: url(images/header/header04.png); 
+   background-size: cover;
+   padding-bottom: auto;
+   border-bottom-style: outset ;
+   position: relative;
+   justify-content: center;
+   z-index: -3;
+}
+.headcontent{
+   text-align: center;
+   color: black;
+   width: 100%;
+   position: absolute;
+   top: 40%;
+   
+}
+.headcontent p .headlogo span{
+   font-family: 'Inspiration', cursive;
+   font-size: 90px;
+   color: rgb(253, 2, 170);
+}
+.headcontent p .headlogo{
+   font-size: 70px;
+}
+.headcontent p .slogan{
+   font-family: 'Shalimar',cursive;
+   font-size: 30px;
+}
+button{
+   width: 150px;
+   background: transparent;
+   border:1px groove rgb(253, 2, 170);
+   border-radius: 2rem;
+   padding: 8px 0;
+   margin: 20px 10px;
+   /* text-align: center; */
+}
+.reserver button{
+   margin-top: 70px;
+}
+button:hover{
+   border: none;
+   background: rgba(253, 2, 169, 0.752);
+   transition: 0.5s;
+}
+
+
+/* le corps de ma page */
+.contenerBody{
+   height: auto;
+   width: 100%;
+   padding: 30px 80px;
+   background-image: url(images/beauty-saloon/beauty_saloon02.jpg);
+   background-size: cover;
+}
+.title{
+   text-align: center;
+   padding-bottom: 30px;
+}
+/* .description {
+   height:auto;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.175);
+    padding: 30px;
+    /* padding-left: 55px;  */
+    /* position: relative;
+    display: flex;
+    justify-content: center; */
+/* margin-bottom: 20px;
+} */
+.offrePres{
+   height:auto;
+   width: 100%;
+   margin: auto;
+   background-color: rgba(255, 255, 255, 0.719);
+   padding: 30px;
+   /* position: relative; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+   margin-bottom: 20px;
+}
+.div1{
+   width: 45%;
+   height: 100%;
+   /* display: flex;
+   flex-wrap: wrap; */
+   margin: auto;
+   text-align: center;
+}
+ul{
+   text-align: center;
+   list-style: none;
+}
+.div1 a {
+   text-decoration: none;
+   color: black;
+}
+.div1 a:hover{
+   color: rgb(16, 16, 189);
+}
+.decouvrir{
+   width: 100%;
+   height: 10%;
+   margin-top: 10px;
+   justify-content: center;
+}
+h1{
+   font-family: 'Inspiration', cursive;
+   font-size: 65px;
+   margin: 5px;
+   text-align: center;
+}
+.div2{
+   width: 55%;
+   height: 100%;
+   display: flex;
+   margin: auto;
+}
+img{
+   width: 300px;
+   height: 300px;
+   margin-right: 10px;
+   border-radius: 5rem;
+   object-fit: cover;
+}
+
+.boutique{
+   height:auto;
+   width: 100%;
+   margin: auto;
+   background-color: rgba(255, 255, 255, 0.719);
+   padding: 30px;
+   /* position: relative; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+   margin-bottom: 20px;
+}
+.titre{
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: -20px;
+}
+.boutcontener{
+   width: 100%;
+   height: auto;
+   display: flex;
+}
+.descr{
+   width: 100%;
+   height: auto;
+   text-align: center;
+}
+
+/* mon pied de page */
+footer{
+   background: black;
+   color:rgb(253, 2, 170) ;
+   padding: 15px 20px;
+   font-weight: lighter;
+}
+.footercontener{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+}
+footer h3{
+   color: #fff;
+   font-family: 'Fuzzy Bubbles', cursive;
+}
+.footerlogo{
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo{
+   color: #fff;
+   font-family: 'Inspiration', cursive;
+   font-size: 25px;
+   border-bottom: 2px solid rgb(253, 2, 170);
+   border-bottom-style: groove ;
+   margin: 6px;
+}
+.logo span{
+   color:rgb(253, 2, 170) ;
+   font-size: 32px;
+   font-family: 'Inspiration', cursive;
+}
+.apropos{
+   width: 40%;
+   padding: 0 10px;
+}
+.suivre{
+   padding: 0 10px;
+}
+.tete{
+   height: 35px;
+}
+.copyryght{
+   padding-top: 10px;
+   text-align: center;
+   height: 100px;
+   padding-top: 50px;
+   margin-top: 70px;
+   color: #fff;
+}
+.copyryght img{
+   width: 50px;
+   height: 30px;
+   padding: -10px;
+   margin: -10px;
+}
+/* .copyryght p{
+   top: 50%;
+   position: relative;
+} */
+
+
+/* css du formulaire d'inscription   */
+.inscription-form{
+   margin: auto;
+   width: 300px;
+   height: auto;
+   background: #ffffff;
+   border-radius: 1em;
+   position: absolute;
+   padding: 25px;
+   box-shadow: 0 0 16px #be86bd67;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.inscription-form h2, h2{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.inscription-form form {
+   /* display: flex;
+   flex-direction: column; */
+   width: 100%;
+   margin: auto;
+}
+.inscription-form form input{
+   display: block;
+   height: 30px;
+   background: #be86bd67;
+   margin-bottom: 20px;
+   /* border-bottom: 2px solid #2c102b; */
+   border: none;
+   outline: none;
+   padding-left: 5px;
+   border-radius: 3px;
+   color: black;
+   width: 100%;
+}
+.bouton-envoyer{
+   margin-top: 20px;
+   margin: auto;
+   cursor: pointer;
+}

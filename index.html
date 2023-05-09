@@ -4,6 +4,7 @@
         <title>Accueil </title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="acceuil.css">
+
     </head>
     <body>
 
@@ -15,119 +16,231 @@
             <div class="navbar-item">
                 <!-- <a href="">acceuil</a> -->
                 <a href="#apropos">à propos</a>
-                <a href="">coiffure</a>
-                <a href="">make-up</a>
-                <a href="">ongle</a>
-                <a href="">boutique</a>
-                <a href="">réservation</a>
+                <a href="#">coiffure</a>
+                <a href="#">make-up</a>
+                <a href="#">nails</a>
+                <a href="#">boutique</a>
+                <a href="#">réservation</a>
             </div>
         </nav>
 
         <!-- le header de la page -->
         <header class="head">
-            <span class="headlogo">
-                <span>S</span>tone's<span>B</span>eaut
-            </span>
-            <span class="slogan">La beauté à l'état naturel...</span>
-            <button class="parcourir">parcourir</button>
+            <div class="headcontent">
+                <p>
+                    <span class="headlogo"><span>S</span>tone's<span>B</span>eaut</span>
+                    <br>
+                    <span class="slogan">La beauté à l'état naturel...</span>    
+                </p>
+                <div class="reserver">
+                    <button type="button">réserver</button>
+                </div>
+            </div>
+            
         </header>
 
         <!-- le corp complet de la page -->
         <section class="contenerBody">
             <!-- le titre de mon corp c7 l'apropos. ce conteneur va contenir 4 divs -->
-            <h2 class="title" id="apropos">A propos</h2>
+            <p class="title">Nos différentes offres n'attendent que vous 😉👌</p>
 
-            <!-- 1ere div: la description de l'institut -->
-            <div class="description">
-                <p class="descr">
-                    Stone'sBeaut est un institut de beauté offrant plusieur types 
-                    de soins à savoir: la coiffure, le make-up et les ongles.
-                    Vous pouvez également vous ravitaller chez nous lorsque vos produits de beauté
-                    finissent dans vos placards... Nous avons une boutique à votre disposition 
-                    pour l'achat de vos diverses produits. Parcourons ensemble et découvrons 
-                    les merveilles que notre institut a à offrir.
-                </p>
-            </div>
+            <hr>
 
             <!-- 2e div: presentation de la coiffure -->
-            <div class="coiffurePres">
+            <div class="offrePres">
 
                 <!-- la partie de gauche -->
                 <div class="div1">
 
-                    <div class="coifType">
                         <!-- les  types de coiffure -->
-                    </div>
+                        <ul>
+                            <h1>Coiffure</h1>
+                            <li><a href="">Braids</a></li>
+                            <li><a href="">Perruque capillaire</a></li>
+                            <li><a href="">Brushing</a></li>
+                            <li><a href="">Chignon</a></li>
+                        </ul>
 
-                    <div class="decouvrir">
-                        <button>découvrir</button>
-                    </div>
-                        
+                        <div class="decouvrir">
+                            <button>découvrir</button>
+                        </div>
                 </div>
 
                 <!-- la partie de droite -->
                 <div class="div2">
                     <!-- deux images de coiffure -->
+                        <img src="images/coiffure/tresse03.jpg" />
+                        <img src="images/coiffure/tresse05.png" />
                 </div>
 
             </div>
+
+            <hr>
 
             <!-- 3e div: presentation du make-up -->
-            <div class="makupPres">
+            <div class="offrePres">
 
                 <!-- la partie de gauche -->
                 <div class="div1">
 
-                    <div class="makupType">
                         <!-- les  types de make-up -->
-                    </div>
+                        <ul>
+                            <h1>Make-up</h1>
+                            <li><a href="">Make-up jour</a></li>
+                            <li><a href="">Make-up pour soirées sociales</a></li>
+                            <li><a href="">Make-up pour cérémonies</a></li>
+                            <li><a href="">Make-up pour bureau</a></li>
+                            <li><a href="">Make-up pour défilé</a></li>
+                            <li><a href="">Face painting</a></li>
+                        </ul>
 
-                    <div class="decouvrir">
-                        <button>découvrir</button>
-                    </div>
+                        <div class="decouvrir">
+                            <button>découvrir</button>
+                        </div>
                         
                 </div>
 
                 <!-- la partie de droite -->
                 <div class="div2">
                     <!-- deux images de make-up -->
+                    <img src="images/make_up/mak05.jpg" />
+                    <img src="images/make_up/mak11.jpg" />
                 </div>
 
             </div>
+
+            <hr>
 
             <!-- 4e div: presentation des ongles -->
-            <div class="makupPres">
+            <div class="offrePres">
 
                 <!-- la partie de gauche -->
                 <div class="div1">
 
-                    <div class="ongleType">
                         <!-- les  types d'ongles -->
-                    </div>
+                        <ul>
+                            <h1>Nails</h1>
+                            <li><a href="">Make-up jour</a></li>
+                            <li><a href="">Make-up pour soirées sociales</a></li>
+                            <li><a href="">Make-up pour cérémonies</a></li>
+                            <li><a href="">Make-up pour bureau</a></li>
+                            <li><a href="">Make-up pour défilé</a></li>
+                            <li><a href="">Face painting</a></li>
+                        </ul>
 
-                    <div class="decouvrir">
-                        <button>découvrir</button>
-                    </div>
+                        <div class="decouvrir">
+                            <button> découvrir</button>
+                        </div>
                         
                 </div>
 
                 <!-- la partie de droite -->
                 <div class="div2">
                     <!-- deux images de make-up -->
+                    <img src="images/nails/nail06.jpg"/>
+                    <img src="images/nails/nail10.jpg"/>
                 </div>
 
             </div>
+
+            <hr>
 
             <!-- 5e div: presentation de la boutique -->
             <div class="boutique">
                 <!-- la boutique de l'intitut. exemples des arcicles de promotion -->
+                <div class="titre">
+                    <div><h1>Boutique</h1></div>
+                    <div class=help></div>
+                </div>
+                <div class="boutcontener">
+                    <div class="descr"> 
+                        <p>
+                            Nous avons une variété de produits disponibles pour vous faire une beauté.
+                        </p>
+                        <button>découvrir</button>
+                    </div>
+                   <div>
+                        <div>
+                            <p>Offres promotionnaires:</p>
+                        </div>
+                        <div>
+                            <div class="promo">
+                                image
+                                prix
+                            </div>
+                        </div>
+                   </div>
+
+                </div>
             </div>
             
         </section>
 
         <!-- le pied de la page -->
         <footer>
-            <!-- copyright, contact(email,tel,whatsapp,facebook...) -->
+            
+            <div class="footerlogo">
+                <div class="aide"></div>
+                <div class="logo">
+                    <span>S</span>tone's<span>B</span>eaut
+                </div>
+            </div>
+
+            <div class="footercontener">
+
+                <div class="apropos" id="apropos">
+                    <div class="tete">
+                        <h3>A propos de nous</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Stone'sBeaut est un institut de beauté offrant plusieur types 
+                            de soins à savoir: la coiffure, le make-up et les nails.
+                            Vous pouvez également vous ravitaller chez nous lorsque vos produits de beauté
+                            finissent dans vos placards... Nous avons une boutique à votre disposition 
+                            pour l'achat de vos diverses produits. Parcourons ensemble et découvrons 
+                            les merveilles que notre institut a à vous offrir.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="suivre">
+                    <div class="tete">
+                        <h3>Suivez-nous</h3>
+                    </div>
+                    <div>
+                        facebook
+                        instagram
+                        tweeter
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div class="tete">
+                        <h3>Contactez-nous</h3>
+                    </div>
+                    <div>
+                        telephone
+                        whatsapp
+                        telegram
+                    </div>
+                </div>
+
+                <div class="adress">
+                    <div class="tete">
+                        <h3>Adresse</h3>
+                    </div>
+                    <div>
+                        icone
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyryght">
+                <p>copyright <img src="images/icones/copyright.png" alt="copyright"> 2022, tous droits réservés.</p> 
+            </div>
+
         </footer>
     </body>
 </html>
